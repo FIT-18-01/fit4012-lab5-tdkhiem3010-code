@@ -1,0 +1,10 @@
+bash tests/test_aes_compile.sh
+[PASS] AES encrypt/decrypt programs compile successfully.
+bash tests/test_encrypt_decrypt_roundtrip.sh
+[PASS] Round-trip encrypt/decrypt recovers plaintext.
+bash tests/test_multiblock_padding.sh
+[PASS] Multi-block plaintext with zero padding is recovered.
+bash tests/test_tamper_negative.sh
+[PASS] Tamper / flip 1 byte negative test changes decrypted output.
+bash tests/test_wrong_key_negative.sh
+[PASS] Wrong key / khóa sai negative test changes decrypted output.
